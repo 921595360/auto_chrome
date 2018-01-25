@@ -5,6 +5,7 @@
 
 package com.silence.service;
 
+import com.silence.common.DateUtils;
 import com.silence.entity.HouseInfo;
 import com.silence.repository.HouseInfoRepository;
 import java.util.List;
@@ -36,7 +37,13 @@ public class HouseInfoService {
         return this.houseInfoRepository.findByCountName(countName).size();
     }
 
+    /**
+     * 添加房源
+     * @param houseInfo
+     */
     public void save(HouseInfo houseInfo) {
+    	//设置房源上传时间
+    	houseInfo.setCreateTime(DateUtils.getDatetime());//当前时间
         this.houseInfoRepository.save(houseInfo);
     }
 

@@ -59,8 +59,19 @@ public class HouseInfo {
 
     @Column(name = "template")
     private String template;
+    
+    @Column(name = "create_time")//name指定的是对应数据库的列名，数据库命名规范一般是以下划线连接单词，所以最好改成
+    private String createTime;//属性名必须与页面中指定的name属性一致（区分大小写）
 
-    public interface Zhuciwo {
+    public String getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+
+	public interface Zhuciwo {
         public static final Integer ZHUWO = 0;//主卧
         public static final Integer CIWO = 1;//次卧
     }

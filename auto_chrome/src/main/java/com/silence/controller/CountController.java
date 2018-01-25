@@ -52,5 +52,11 @@ public class CountController {
         countService.appplayGanji(countName);
         return null;
     }
-
+    @RequestMapping("applyRezu")
+    public Object applyRezu(String countName){
+        countService.appplayGanji(countName);
+        return null;
+    }
+    
+    
 }

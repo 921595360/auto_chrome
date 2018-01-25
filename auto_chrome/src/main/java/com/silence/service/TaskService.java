@@ -151,7 +151,8 @@ public class TaskService {
                 WebElement xiaoqu = null;
 
                 try {
-                    xiaoqu = wb.findElement(By.id("community_unite"));
+//                    xiaoqu = wb.findElement(By.id("community_unite"));
+                	xiaoqu = wb.findElement(By.id("community-input"));
                 } catch (Exception var14) {
                     try {
                         xiaoqu = wb.findElement(By.id("GJ-village-input"));

@@ -112,6 +112,7 @@
                                 { label: '小区', name: 'xiaoqu', width: 150,editable: true },
                                 { label: '标题', name: 'biaoti', width: 150 ,editable: true},
                                 { label:'租金', name: 'zujin', width: 150 ,editable: true},
+                                { label:'上传时间', name: 'createTime', width: 220 ,editable: true},
                                 { label:'室', name: 'shi', width: 150 ,editable: true},
                                 { label:'厅', name: 'ting', width: 150 ,editable: true},
                                 { label:'卫', name: 'wei', width: 150 ,editable: true},
@@ -125,6 +126,7 @@
                                 { label:'主次卧', name: 'zhuciwo', width: 150 ,editable: true},
                                 { label:'图片地址', name: 'imgUrl', width: 150 ,editable: true},
                                 { label:'模板', name: 'template', width: 150 ,editable: true}
+                                
                             ],
                             viewrecords: true,
                             loadonce: true,
