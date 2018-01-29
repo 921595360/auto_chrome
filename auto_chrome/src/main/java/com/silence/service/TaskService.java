@@ -157,7 +157,11 @@ public class TaskService {
                     try {
                         xiaoqu = wb.findElement(By.id("GJ-village-input"));
                     } catch (Exception var13) {
-                        xiaoqu = wb.findElement(By.id("wuba-village-input"));
+                        try {
+							xiaoqu = wb.findElement(By.id("wuba-village-input"));
+						} catch (Exception e) {
+							xiaoqu = wb.findElement(By.id("community_unite"));
+						}
                     }
                 }
 
